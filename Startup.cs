@@ -22,7 +22,8 @@ namespace LotteryTool
             {
                 List<string> list = new List<string>{"a","b","c"};
                 
-                list.ForEach(item => {
+                list.ForEach(item => 
+                {
                     Console.WriteLine("Load WebSit" + item);
                 });
                 
