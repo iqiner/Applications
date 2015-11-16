@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Http;
 using Microsoft.Framework.DependencyInjection;
@@ -22,6 +20,12 @@ namespace LotteryTool
             
             app.Run(async (context) =>
             {
+                List<string> list = new List<string>{"a","b","c"};
+                
+                list.ForEach(item => {
+                    Console.WriteLine("Load WebSit" + item);
+                });
+                
                 await context.Response.WriteAsync("Hello World!");
             });
         }
